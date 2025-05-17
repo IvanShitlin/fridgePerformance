@@ -1,4 +1,4 @@
-package com.higeco.fridgeperformance;
+package com.higeco.fridgeperformance.api.dto;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
@@ -7,6 +7,4 @@ import lombok.Data;
 public class Label{
     @JsonProperty("default")
     public String mydefault;
-//    public String en-GB;
-//    public String it-IT;
 }

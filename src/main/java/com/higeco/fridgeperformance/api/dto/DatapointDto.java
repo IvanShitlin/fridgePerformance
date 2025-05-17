@@ -1,4 +1,4 @@
-package com.higeco.fridgeperformance;
+package com.higeco.fridgeperformance.api.dto;
 
 import lombok.Data;
 
