@@ -22,6 +22,7 @@ The application computes refrigerator efficiency over a specified time interval.
 2.	Fetch temperature setpoint data
 3.	Obtain actual temperature readings for the given period
 
+Before processing, the input time interval is validated for correctness.
 In the current implementation, temperature setpoints are persisted in the database for each refrigerator. It is also prepared to store raw temperature data: to support this, a `CachedClientWrapper` layer has been developed, encapsulating the caching and storage logic.
 
 ### Configuration
@@ -44,7 +45,7 @@ Docker Compose is required to run this application. Launch all services with:
 After successful launch you can use the app via curl or Postman like in example below:
 
  ```shell
-    curl "localhost:8080/performance?from=2025-05-01T12:00:00.000Z&to=2025-05-01T11:00:00.000Z"
+    curl "localhost:8080/performance?from=2025-05-01T12:00:00.000Z&to=2025-05-01T13:00:00.000Z"
 ```
 
 ## Potential Improvements
